@@ -1,0 +1,70 @@
+:root {
+    --btn-transition: all 0.35s;
+    --btn-color: rgba(246, 56, 84, 1);
+    --title-color: #222;
+    --icon-border: rgba(198, 198, 198, 0.3);
+    --bg-gray: #f9f9f9;
+    --bg-icon-gray: #ebedef;
+    --title-small-color: #222;
+    --title-dark-color: #333;
+    --form-border-color: #f1f1f1;
+    --form-text-color: #495057;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    font-family: open sans, sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-size: 38px; */
+    font-family: "arvo";
+    line-height: 1.2;
+}
+
+h3 a,
+h4 a {
+    font-family: "arvo";
+}
+
+.h3 {
+    font-size: 18px;
+}
+
+.h4 {
+    font-size: 16px;
+}
+
+p {
+    color: #abacae;
+    font-family: open sans, sans-serif;
+}
+
+a {
+    color: #585b60;
+    font-family: open sans, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}

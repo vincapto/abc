@@ -1,0 +1,43 @@
+/* Wrapper */
+.wrapper {
+    width: 100%;
+}
+.wrapper-padding {
+    /* padding: 60px 0; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.wrapper--padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.wrapper-footer {
+    padding-top: 150px;
+}
+
+.wrapper-home {
+    padding: 200px 0 80px 0;
+    background: url(/images/hero-area.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    overflow: hidden;
+    padding: 200px 0 80px;
+}
+
+.wrapper-gray {
+    background-color: var(--bg-gray);
+}
+
+.wrapper-red {
+    background-color: var(--btn-color);
+}
+
+.wrapper-c-pad {
+    /* flex: 1 1 0; */
+    box-sizing: border-box;
+    padding: 10px 15px;
+}

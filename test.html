@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .div {
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                border-radius: 5px;
+                border: 2px solid blue;
+                margin-left: 50px;
+                margin-top: 50px;
+                display: none;
+            }
+
+            .q {
+                background-color: green;
+                width: 200px;
+                height: 200px;
+            }
+            .a {
+                background-color: red;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <button id="z" class="btn" ">Try it</button>
+        <button id="z" class="menu__btn" ">Try it</button>
+        <div class="q"></div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        // $("div").fadeIn("slow");
+
+        $(".btn").click(function (event) {
+            alert("I amwefewwf an alert box!");
+            // var s = document.getElementsByClassName("q");
+            // var element = document.getElementById("z");
+            // element.classList.toggle("a");
+            // s[0].classList.toggle("a");
+            // // $(".menu__btn").click(alert("I am an alert box!"));
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        // $("div").fadeIn("slow");
+
+        $(".menu__btn").click(function (event) {
+            alert("FUUUK");
+            // var s = document.getElementsByClassName("q");
+            // var element = document.getElementById("z");
+            // element.classList.toggle("a");
+            // s[0].classList.toggle("a");
+            // $(".menu__btn").click(alert("I am an alert box!"));
+        });
+    });
+</script>

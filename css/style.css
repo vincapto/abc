@@ -1,0 +1,304 @@
+/* General */
+.m-auto {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.t--center {
+    text-align: center;
+}
+
+.t--left {
+    text-align: left;
+}
+.t--right {
+    text-align: right;
+}
+
+.f--big {
+    font-size: 42px;
+}
+
+.thumb-round {
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+    text-align: center;
+    color: var(--btn-color);
+
+    overflow: hidden;
+    transition: var(--btn-transition);
+}
+
+.social {
+}
+/* header */
+.header--fixed {
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+.sticky {
+    /* position: fixed; */
+
+    transition: var(--btn-transition);
+}
+
+.sticky--shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+}
+
+.logo {
+    flex: 1 1 0;
+}
+
+.logo__img {
+    max-width: 150px;
+    display: block;
+}
+
+/* Home */
+.home {
+    justify-content: center;
+}
+
+.home__title {
+    margin-bottom: 10px;
+
+    line-height: 60px;
+}
+
+.home__btn {
+    margin-top: 20px;
+}
+
+.home__header {
+    flex: 2 1 0;
+}
+
+.home--flex {
+    flex: 0 1 58%;
+    max-width: 58%;
+}
+
+.home__img img {
+    max-width: 100%;
+}
+
+/* Services */
+.services__item {
+    padding: 20px;
+    text-align: center;
+}
+
+.services--flex {
+    flex: 0 1 33%;
+    max-width: 33%;
+}
+
+.services__thumb {
+    width: 70px;
+    height: 70px;
+    line-height: 100%;
+    background-color: #fff;
+    border: 1px solid var(--icon-border);
+    /* border-radius: 50px; */
+}
+
+.card:hover .services__icon {
+    background-color: var(--btn-color);
+    color: #fff;
+}
+
+.services__title {
+    margin: 10px 0;
+}
+
+/* About */
+.about--flex {
+    flex: 0 1 50%;
+    max-width: 50%;
+}
+
+/* Feature */
+.features--flex {
+    flex: 0 1 33%;
+    max-width: 33%;
+}
+
+.feature__list {
+    align-items: center;
+}
+
+.feature__item {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.feature__item:hover .feature__title {
+    color: var(--btn-color);
+    transition: var(--btn-transition);
+}
+
+.feature__info {
+    flex: 1 1 0;
+}
+
+.feature__title {
+    margin-bottom: 8px;
+    color: var(--title-small-color);
+    /* font-size: 18px; */
+}
+
+.features__icon {
+    flex: 0 1 60px;
+    max-width: 60px;
+    height: 60px;
+    margin: 12px;
+    font-size: 30px;
+    color: var(--btn-color);
+}
+
+/* Team */
+.team--flex {
+    flex: 0 1 50%;
+    max-width: 50%;
+}
+
+.team__img {
+    max-width: 200px;
+}
+.team__info {
+    padding: 15px 30px;
+}
+
+.team__header {
+    margin-bottom: 10px;
+}
+
+.team__title {
+    margin-bottom: 10px;
+}
+.team__social {
+    padding-top: 10px;
+}
+
+.team__social li {
+    margin-left: 10px;
+}
+
+/* Pricing */
+.pricing--flex {
+    flex: 0 1 33%;
+    max-width: 33%;
+}
+
+.pricing__item {
+    padding: 30px;
+}
+.pricing__thumb {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+
+    background-color: var(--bg-icon-gray);
+}
+
+.pricing__item:hover .pricing__thumb {
+    background-color: var(--btn-color);
+    color: #fff;
+}
+
+.pricing__title {
+    padding-top: 20px;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    color: var(--title-dark-color);
+}
+
+.pricing__list {
+    margin-bottom: 20px;
+}
+
+.pricing__list * {
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+/* CTA */
+.cta {
+    padding: 30px 0;
+    align-items: center;
+}
+
+/* Testimonials */
+.testimonials--flex {
+    flex: 0 1 33%;
+    max-width: 33%;
+}
+
+.testimonials__item {
+    padding: 20px;
+}
+.testimonials__thumb {
+    margin: 15px;
+    width: 75px;
+    height: 75px;
+}
+
+.testimonials__title {
+    line-height: 30px;
+}
+
+.testimonials__desc {
+    color: var(--title-dark-color);
+}
+
+/* Footer */
+.footer__title {
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.footer__info {
+    align-self: flex-start;
+}
+
+.footer__list li {
+    margin-bottom: 10px;
+}
+
+.footer__links {
+    justify-content: space-between;
+    flex: 2 1 0;
+}
+
+.footer__content {
+    align-items: center;
+}
+
+.footer__logo {
+    padding-bottom: 20px;
+}
+
+.cta .block-header {
+    margin: 0;
+}
+
+.cta .block-header-desc {
+    margin: 0;
+}

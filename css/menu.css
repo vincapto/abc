@@ -1,0 +1,135 @@
+.menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__item {
+    font-size: 16px;
+    position: relative;
+    margin-left: 40px;
+    text-transform: capitalize;
+}
+
+.menu__item:hover a {
+    color: var(--btn-color);
+}
+
+.menu__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0.0001);
+    background-color: var(--btn-color);
+    transition: var(--btn-transition);
+}
+
+.menu__item:hover::after {
+    transform: scaleX(1);
+}
+
+/* Burger */
+.menu--burger-active {
+    opacity: 1;
+    /* visibility: hidden; */
+}
+.menu--burger {
+    position: absolute;
+    z-index: 0;
+
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    flex-direction: column;
+    align-items: center;
+    /* opacity: 1; */
+    /* visibility: hidden; */
+    background-color: green;
+
+    transition: all 0.3s;
+}
+
+.menu__btn--hidden {
+    visibility: hidden;
+}
+
+.menu__btn {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+
+    cursor: pointer;
+}
+
+/* Burger Lines */
+.menu__line:after,
+.menu__line::before,
+.menu__line {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0.2rem;
+    background-color: black;
+    content: "";
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.menu__line::before {
+    position: absolute;
+    top: -0.5rem;
+}
+.menu__line::after {
+    position: absolute;
+    top: 0.5rem;
+}
+
+.menu__line-active {
+    top: 0;
+    transform: rotate(45deg);
+}
+.menu__line-active::after {
+    top: 0;
+    transform: rotate(0);
+}
+.menu__line-active::before {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown__content {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    /* display: none; */
+    text-align: center;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.dropdown__list li a {
+    transition: var(--btn-transition);
+}
+.dropdown__list li:hover a {
+    color: var(--btn-color);
+}

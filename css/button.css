@@ -1,0 +1,40 @@
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--btn-color);
+
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    border-radius: 30px;
+
+    color: var(--btn-color);
+    background-color: #fff;
+
+    transition: var(--btn-transition);
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--btn-color);
+}
+
+.btn--fill {
+    color: #fff;
+    background-color: var(--btn-color);
+}
+
+.btn--fill:hover {
+    color: var(--btn-color);
+    background-color: rgba(255, 255, 255, 1);
+}

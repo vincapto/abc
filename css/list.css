@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list--hidden {
+    opacity: 0;
+    /* visibility: hidden; */
+}
+
+.list__item {
+}
