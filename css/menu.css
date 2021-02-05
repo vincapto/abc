@@ -42,7 +42,7 @@
 .menu--burger {
     position: absolute;
     z-index: 0;
-
+    padding-top: 20px;
     width: 100%;
     left: 0;
     top: 0;
@@ -51,9 +51,16 @@
     align-items: center;
     /* opacity: 1; */
     /* visibility: hidden; */
-    background-color: green;
+
+    background-color: #fff;
 
     transition: all 0.3s;
+}
+
+.menu--burger li {
+    padding: 10px;
+}
+.menu--burger li:hover {
 }
 
 .menu__btn--hidden {

@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     // This media query targets viewports that have a minimum width of 320px
-    const mQuery = window.matchMedia("(max-width: 768px)");
+    const mQuery = window.matchMedia("(max-width: 974px)");
     var element = document.getElementsByClassName("menu__list");
     var btn = document.getElementsByClassName("menu__btn");
     var line = document.getElementsByClassName("menu__line");
@@ -20,12 +20,11 @@ $(document).ready(function () {
 
     function handleMobilePhoneResize(e) {
         // Check if the media query is true
-        if (window.matchMedia("(max-width: 768px)").matches) {
+        if (window.matchMedia("(max-width: 974px)").matches) {
             btn[0].classList.remove("menu__btn--hidden");
+            element[0].classList.add("menu--burger", "list--hidden");
 
             footer__content[0].classList.add("c-column");
-
-            element[0].classList.add("menu--burger", "list--hidden");
 
             footer__links[0].classList.add("c-column");
 
@@ -34,14 +33,13 @@ $(document).ready(function () {
             for (var i = 0, n = dropdown__list.length; i < n; i++) {
                 dropdown__list[i].classList.add("dropdown__content");
             }
-        } else if (window.matchMedia("(min-width: 769px)").matches) {
+        } else if (window.matchMedia("(min-width: 975px)").matches) {
             btn[0].classList.add("menu__btn--hidden");
+            element[0].classList.remove("menu--burger", "list--hidden");
 
             footer__content[0].classList.remove("c-column");
 
             dropdown[0].classList.add("dropdown");
-
-            element[0].classList.remove("menu--burger", "list--hidden");
 
             for (var i = 0, n = dropdown__list.length; i < n; i++) {
                 dropdown__list[i].classList.remove("dropdown__content");
